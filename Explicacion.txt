@@ -1,0 +1,20 @@
+Este programa consta de dos partes principales: la clase Alumno y la clase RegistroAlumnos.
+
+La clase Alumno tiene cuatro atributos privados: nombre, apellido, matricula y carrera. Cada atributo tiene un método de acceso get correspondiente (por ejemplo, getNombre()) para obtener el valor del atributo. Además, tiene un constructor que recibe como parámetros el valor de cada atributo y los establece al crear una nueva instancia de la clase.
+
+La clase RegistroAlumnos es la clase principal y contiene el método main que se ejecuta al ejecutar el programa. Utiliza una lista de alumnos (ArrayList) para registrar a cada alumno ingresado. Utiliza la clase Scanner para recibir input del usuario. El programa entra en un ciclo while para que el usuario pueda ingresar varios alumnos. El ciclo termina cuando el usuario ingresa "salir" en lugar de un nombre.
+Cada vez que el usuario ingresa un alumno, se crea un nuevo objeto de la clase Alumno con los valores ingresados, y se agrega a la lista de alumnos.
+Finalmente, se imprime toda la lista de alumnos registrados.
+
+
+
+
+El código anterior es un programa en Java que utiliza la clase Persona para llevar a cabo el registro de personas, y luego imprimir la información de las personas registradas.
+
+La clase RegistroPersonas tiene un método main, que es el punto de entrada del programa. En este método se utiliza una lista de personas (ArrayList<Persona> personas) para almacenar los objetos de la clase Persona que se crean durante el registro. Se utiliza un objeto de la clase Scanner (Scanner scanner = new Scanner(System.in)) para recibir input del usuario a través del teclado.
+
+El programa comienza preguntando al usuario cuantas personas quiere registrar (System.out.println("¿Cuantas personas quiere registrar? ");) y guardando la respuesta en una variable (numPersonas = scanner.nextInt();). Luego, utiliza un ciclo for (for (int i = 0; i < numPersonas; i++)) para recibir los datos de cada persona, crear un objeto de la clase Persona con esos datos, y agregar el objeto a la lista de personas. Dentro del ciclo, se utiliza el objeto scanner para recibir input del usuario para cada atributo de la persona (nombre, apellido, edad, estatura) y se almacena en variables correspondientes.
+
+Una vez que se han registrado todas las personas, el programa imprime la información de cada persona utilizando un ciclo for (for (Persona persona : personas)) y llamando al método imprimirInfo() en cada objeto persona.
+
+En resumen, este programa le permite al usuario registrar varias personas y guardar su información en una lista, y luego imprime la información de cada persona registrada.
