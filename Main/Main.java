@@ -17,7 +17,7 @@ public class Main {
       lsavion.add(avion3);
       lsavion.add(avion4);
       lsavion.add(new Avion());
-        
+
       for(Avion elemento: lsavion){
             System.out.println(elemento.toString());
         }

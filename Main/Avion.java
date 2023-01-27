@@ -53,4 +53,8 @@ public class Avion {
     public void aterrizar(){
         System.out.println("El avion "+this.modelo+" ha aterrizado");
     }
+    @Override
+    public String toString() {
+        return "Modelo: " + modelo + ", Capacidad de gasolina: " + capacidadGasolina + ", Velocidad máxima: " + velocidadMaxima + ", Altitud máxima: " + altitudMaxima;
+    }
 }
