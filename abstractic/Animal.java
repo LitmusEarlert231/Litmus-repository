@@ -1,49 +1,47 @@
 package abstractic;
 
 interface Animal {
-    public void makeSound();
+  public void getSonido();
+}
+
+abstract class Mamifero implements Animal {
+  protected String nombre;
+
+  public Mamifero(String nombre) {
+    this.nombre = nombre;
   }
-  
-  abstract class Mammal implements Animal {
-    protected String name;
-  
-    public Mammal(String name) {
-      this.name = name;
-    }
-  
-    public abstract void move();
+
+  public abstract void movimiento();
+}
+
+class Perro extends Mamifero {
+  public Perro(String nombre) {
+    super(nombre);
   }
-  
-  class Dog extends Mammal {
-    public Dog(String name) {
-      super(name);
-    }
-  
-    @Override
-    public void makeSound() {
-      System.out.println(name + " barks");
-    }
-  
-    @Override
-    public void move() {
-      System.out.println(name + " runs");
-    }
+
+  @Override
+  public void getSonido() {
+    System.out.println(nombre + " ladrar");
   }
-  
-  class Cat extends Mammal {
-    public Cat(String name) {
-      super(name);
-    }
-  
-    @Override
-    public void makeSound() {
-      System.out.println(name + " meows");
-    }
-  
-    @Override
-    public void move() {
-      System.out.println(name + " walks");
-    }
+
+  @Override
+  public void movimiento() {
+    System.out.println(nombre + " correr");
   }
-  
- 
+}
+
+class Gato extends Mamifero {
+  public Gato(String nombre) {
+    super(nombre);
+  }
+
+  @Override
+  public void getSonido() {
+    System.out.println(nombre + " maullido");
+  }
+
+  @Override
+  public void movimiento() {
+    System.out.println(nombre + " caminar");
+  }
+}
