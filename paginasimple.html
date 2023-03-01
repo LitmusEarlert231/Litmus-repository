@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><button id="register-btn">Registrarse</button></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <div class="register-form" id="register-form">
+        <form>
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Registrarse</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <h1>Últimas Entradas</h1>
+      <article>
+        <h2>Entrada 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis imperdiet nulla quis sodales.</p>
+      </article>
+      <article>
+        <h2>Entrada 2</h2>
+        <p>Nullam aliquet, est sit amet semper tristique, massa odio convallis elit, sit amet consectetur metus quam ac arcu.</p>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
