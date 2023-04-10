@@ -16,8 +16,6 @@
       <h1>Rick and Morty Characters</h1>
       <div id="characters"></div>
     </div>
-
-    <!-- Importar Bootstrap JS y jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/XwMhoHp8Ed5JQ"
@@ -33,19 +31,15 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
     <script>
-      // Obtener los personajes de la API
       fetch("https://rickandmortyapi.com/api/character")
         .then((response) => response.json())
         .then((data) => {
-          // Obtener la lista de personajes
+
           const characters = data.results;
 
-          // Obtener el contenedor donde se mostrarán los personajes
           const charactersContainer = document.getElementById("characters");
 
-          // Recorrer la lista de personajes y crear una tarjeta para cada uno
           characters.forEach((character) => {
             const card = document.createElement("div");
             card.classList.add("card");
