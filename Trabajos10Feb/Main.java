@@ -8,6 +8,9 @@ public class Main {
         e2();
         e3();
         e4();
+        e5();
+        e6();
+        e7();
     }
 
     static void e1() {
@@ -33,7 +36,6 @@ public class Main {
         System.out.println("Ejercicio 3");
         int menor = Metodos.obtenerMenor(sc);
         System.out.println("El menor de los números introducidos es: " + menor);
-        sc.close();
     }
 
     static void e4() {
@@ -41,7 +43,26 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ejercicio 4");
         double harina = Metodos.calcularHarina(sc);
-        System.out.println("La cantidad de harina a utilizar es: " + harina + " kg");
-        sc.close();
+        System.out.println("La cantidad de harina a utilizar es: " + harina + " kg");   
+    }
+
+    static void e5(){
+        //Ejercicio 5 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ejercicio 5");
+        Metodos.imprimirResultado(sc);
+    }
+
+    static void e6(){
+        //Ejercicio 6
+        System.out.println("Ejercicio 6");
+        Metodos.imprimirDiploma("La Universidad Autónoma de México", "Marco Pérez", 5, "Ingeniería en Sistemas Computacionales", "Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: la voluntad. Albert Einstein");
+    }
+
+    static void e7(){
+        System.out.println("Ejercicio1 7");
+        Metodos.imprimirDiploma("Marco", "Pérez", 9.0, 5, "Ingeniería en Sistemas Computacionales");
     }
 }
+
+
