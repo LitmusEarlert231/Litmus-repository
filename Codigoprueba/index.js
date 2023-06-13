@@ -34,3 +34,14 @@ if(edad < 12){
 }else{
     console.log(nombre + ' es un anciano.');
 }
+
+let hora = 15;
+if (hora > 0 && hora < 6){
+    console.log("Dejame dormir");
+}else if(hora > 5 && hora < 12){
+    console.log("Buenos dias");
+}else if(hora > 11 && hora < 19){
+    console.log("Buenas tardes");
+}else{
+    console.log("Buenas noches");
+}
